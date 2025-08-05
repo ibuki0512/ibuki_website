@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>トップページ</title>
+</head>
+<body>
+    
+    <div class="loading">
+        <img class="loading__logo" src="images/zikosyoukai.jpg" alt="VOOL">
+    </div>
+    <div class="sidebar">
+        <a href="index.html">自己紹介ホーム</a>
+        <a href="hobby.html">趣味</a>
+        <a href="favorite.html">好物</a>
+      </div>
+    <div class="contact-us">
+        
+        <div class="form">                        
+            <div class="text">
+                
+               <h2>FURUSAWA IBUKI | 古澤息吹(20) </h2>
+               <h3>開志専門職大学大学院学士在学中.</h3>
+                <h3>2005年5月12日生まれ</h3>
+               <p>開志専門職大学  情報学部２年の古澤息吹です。<br>
+                現在は情報学部でプログラミングなどを勉強中で７階にある
+                kaishi labで受付バイトをしています。</p>
+                <p>    最近では、情報学部の公式インスタグラムを運営したり、医療福祉大学と合同でとある器具の開発をしたりしています。</p>
+                <p>今回は私の</p><h4>『趣味』、</h4><h4>『好物』</h4><p>についてお話させていただきます。</p>
+              <a href="https://kaishi-pu.ac.jp/" target="_blank" class="btn-img">
+                
+                <p>↓開志専門職大学 キャンパス</p>
+              </a>
+            </div>     
+        <div class="social-icon">
+            <div class="home">       <a href="index.html">自己 紹介 ホーム</a>       </div>
+            <div class="research">    <a href="hobby.html">趣味</a>          </div>
+            <div class="contact">     <a href="favorite.html">好物</a>    </div>       
+ 
+        </div>  
+        
+    </div> 
+    <img id="mypic" onclick="slideshow()" src="images/開志専門職大学_メイン写真.jpg" width="400" height="300">
+        <script>
+            var pics_src = new Array("images/開志専門職大学_メイン写真.jpg","images/yoneyama-1.jpg","images/animann_campus.jpg");
+            var num = 0;
+
+            function slideshow(){
+                if (num == 2) {
+                    num = 0;
+                }
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+            }
+        </script>
+    <p>※画像をクリックでそれぞれのキャンパスを見れます</p>
+    <p>※1.事業創造学部 2.情報学部 3.アニメマンガ学部</p>
+
+
+
+
+
+
+
+</body>
+</html>
